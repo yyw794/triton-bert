@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "triton-bert"
+version = "0.4.0"
+description = "easy to use bert with nvidia triton server"
+authors = ["yanyongwen712 <yanyongwen712@pingan.com.cn>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+tritonclient = {extras = ["grpc", "http"], version = "^2.41.0"}
+transformers = "^4.36.2"
+more-itertools = "^10.1.0"
+protobuf = "^4.25.1"
+
+
+[[tool.poetry.source]]
+name = "default"
+url = "http://mirrors.aliyun.com/pypi/simple/"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

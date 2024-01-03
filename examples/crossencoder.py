@@ -5,8 +5,8 @@ class CrossEncoder(TritonBert):
     '''
     rank with text similarity
     '''
-    def __init__(self, **kwargs):
-        super().__init__(**kwargs)
+    def __init__(self, triton_host:str, model: str, vocab:str, **kwargs):
+        super().__init__(triton_host=triton_host, model=model, vocab=vocab, **kwargs)
 
     def proprocess(self, triton_output):
         return np.squeeze(triton_output[0], axis=1).tolist()

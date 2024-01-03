@@ -1,5 +1,5 @@
 
-from typing import Optional
+from typing import Optional, List
 import tritonclient.grpc as grpcclient
 from more_itertools.more import chunked
 from transformers import BertTokenizerFast
@@ -108,4 +108,10 @@ class TritonBert:
         if isinstance(texts, str):
             texts = [texts]
         return self.predict(texts, text_pairs)
+
+    def encode(self, sentences: List[str]):
+        return self.__call__(sentences)
+
+    def encode(self, sentence: str):
+        return self.__call__(sentence)[0]
 

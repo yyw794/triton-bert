@@ -1,8 +1,8 @@
 
-from typing import Optional, List
+from typing import Optional, List, Union, Tuple
 import tritonclient.grpc as grpcclient
 from more_itertools.more import chunked
-from transformers import BertTokenizerFast
+from transformers import AutoTokenizer
 from transformers.file_utils import PaddingStrategy
 from transformers.tokenization_utils_base import TruncationStrategy
 from tritonclient.utils import InferenceServerException, triton_to_np_dtype
@@ -20,7 +20,7 @@ class TritonBert:
         self.truncation = truncation
         self.parse_triton_model_config()
 
-        self.tokenizer = BertTokenizerFast.from_pretrained(vocab)
+        self.tokenizer = AutoTokenizer.from_pretrained(vocab)
 
     def connect_triton(self):
         self.triton_client = grpcclient.InferenceServerClient(url=self.triton_url)
@@ -55,10 +55,10 @@ class TritonBert:
         #assume bert model input dim is (batch, sequence)
         inputs = [grpcclient.InferInput(input_name, [batch, max_sequence_len], data_type) for input_name, data_type in zip(self.model_input_names, self.model_input_data_types)]
         outputs = [grpcclient.InferRequestedOutput(output_name) for output_name in self.model_output_names]
-        #bert: ['input_ids', 'attention_mask', 'token_type_ids']
-        #TODO: use encoded_input.keys(). key order ??
-        for i, k in enumerate(['input_ids', 'attention_mask', 'token_type_ids']):
-            #logger.debug(f"{encoded_input[k]}")
+        # bert: ['input_ids', 'attention_mask', 'token_type_ids']
+        # but, roberta has no token_type_ids
+        encoded_input_keys = [x for x in ['input_ids', 'attention_mask', 'token_type_ids'] if x in encoded_input]
+        for i, k in enumerate(encoded_input_keys):
             inputs[i].set_data_from_numpy(encoded_input[k].astype(triton_to_np_dtype(self.model_input_data_types[i])))
         try:
             triton_ret = self.triton_client.infer(model_name=self.model,inputs=inputs,outputs=outputs)
@@ -81,7 +81,9 @@ class TritonBert:
         return encoded_input
 
     def proprocess(self, triton_output):
-        raise NotImplementedError
+        #raise NotImplementedError
+        # triton_output[0] means we only get the first output. if you have two outputs, CHANGE THIS
+        return triton_output[0].tolist()
 
     def _predict(self, texts, text_pairs=[]):
         if not texts:
@@ -109,9 +111,14 @@ class TritonBert:
             texts = [texts]
         return self.predict(texts, text_pairs)
 
-    def encode(self, sentences: List[str]):
+    def encodes(self, sentences: Union[List[str], Tuple[str]]):
         return self.__call__(sentences)
 
     def encode(self, sentence: str):
         return self.__call__(sentence)[0]
+
+
+
+
+
 

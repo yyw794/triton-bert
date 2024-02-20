@@ -15,3 +15,7 @@ class CrossEncoder(TritonBert):
         #change user rank input into our input pairs
         texts = len(text_pairs)*[query]
         return self.predict(texts, text_pairs)
+
+if __name__ == "__main__":
+    model = CrossEncoder(triton_host="xx", model="xx", vocab="xx")
+    model("小明借了小红500元", ['小红借了小明500元', '小明还了小红500元', '小明借了小红400元'])

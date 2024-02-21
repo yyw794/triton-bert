@@ -111,11 +111,12 @@ class TritonBert:
             texts = [texts]
         return self.predict(texts, text_pairs)
 
-    def encodes(self, sentences: Union[List[str], Tuple[str]]):
-        return self.__call__(sentences)
+    def encode(self, sentences: Union[str, List[str], Tuple[str]]):
+        if isinstance(sentences, str):
+            return self.__call__(sentences)[0]
+        else:
+            return self.__call__(sentences)
 
-    def encode(self, sentence: str):
-        return self.__call__(sentence)[0]
 
 
 

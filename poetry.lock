@@ -32,8 +32,8 @@ testing = ["bitsandbytes", "datasets", "deepspeed (<0.13.0)", "evaluate", "param
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "aiohttp"
@@ -133,8 +133,8 @@ speedups = ["Brotli", "aiodns", "brotlicffi"]
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "aiosignal"
@@ -152,8 +152,8 @@ frozenlist = ">=1.1.0"
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "annotated-types"
@@ -171,8 +171,8 @@ typing-extensions = {version = ">=4.0.0", markers = "python_version < \"3.9\""}
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "async-timeout"
@@ -187,8 +187,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "attrs"
@@ -211,8 +211,8 @@ tests-no-zope = ["attrs[tests-mypy]", "cloudpickle", "hypothesis", "pympler", "p
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "brotli"
@@ -308,8 +308,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "certifi"
@@ -324,8 +324,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "cffi"
@@ -393,8 +393,8 @@ pycparser = "*"
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "charset-normalizer"
@@ -497,8 +497,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "click"
@@ -516,8 +516,8 @@ colorama = {version = "*", markers = "platform_system == \"Windows\""}
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "colorama"
@@ -532,8 +532,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "datasets"
@@ -579,8 +579,8 @@ vision = ["Pillow (>=6.2.1)"]
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "dill"
@@ -598,8 +598,8 @@ graph = ["objgraph (>=1.7.2)"]
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "filelock"
@@ -619,8 +619,8 @@ typing = ["typing-extensions (>=4.8)"]
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "flagembedding"
@@ -641,8 +641,8 @@ transformers = ">=4.33.0"
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "frozenlist"
@@ -732,8 +732,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "fsspec"
@@ -775,8 +775,8 @@ tqdm = ["tqdm"]
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "gevent"
@@ -846,8 +846,8 @@ test = ["cffi (>=1.12.2)", "coverage (>=5.0)", "dnspython (>=1.16.0,<2.0)", "idn
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "geventhttpclient"
@@ -944,8 +944,8 @@ six = "*"
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "greenlet"
@@ -1020,8 +1020,8 @@ test = ["objgraph", "psutil"]
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "grequests"
@@ -1040,8 +1040,8 @@ requests = "*"
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "grpcio"
@@ -1111,8 +1111,8 @@ protobuf = ["grpcio-tools (>=1.60.1)"]
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "huggingface-hub"
@@ -1148,8 +1148,8 @@ typing = ["types-PyYAML", "types-requests", "types-simplejson", "types-toml", "t
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "idna"
@@ -1164,8 +1164,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "jinja2"
@@ -1186,8 +1186,8 @@ i18n = ["Babel (>=2.7)"]
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "joblib"
@@ -1202,8 +1202,27 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
+
+[[package]]
+name = "jsonlines"
+version = "4.0.0"
+description = "Library with helpers for the jsonlines file format"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "jsonlines-4.0.0-py3-none-any.whl", hash = "sha256:185b334ff2ca5a91362993f42e83588a360cf95ce4b71a73548502bda52a7c55"},
+    {file = "jsonlines-4.0.0.tar.gz", hash = "sha256:0c6d2c09117550c089995247f605ae4cf77dd1533041d366351f6f298822ea74"},
+]
+
+[package.dependencies]
+attrs = ">=19.2.0"
+
+[package.source]
+type = "legacy"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "markupsafe"
@@ -1276,8 +1295,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "more-itertools"
@@ -1292,8 +1311,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "mpmath"
@@ -1314,8 +1333,8 @@ tests = ["pytest (>=4.6)"]
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "multidict"
@@ -1418,8 +1437,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "multiprocess"
@@ -1451,8 +1470,8 @@ dill = ">=0.3.7"
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "networkx"
@@ -1474,8 +1493,8 @@ test = ["codecov (>=2.1)", "pytest (>=7.2)", "pytest-cov (>=4.0)"]
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "nltk"
@@ -1504,8 +1523,8 @@ twitter = ["twython"]
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "numpy"
@@ -1546,8 +1565,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "nvidia-cublas-cu12"
@@ -1562,8 +1581,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "nvidia-cuda-cupti-cu12"
@@ -1578,8 +1597,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "nvidia-cuda-nvrtc-cu12"
@@ -1594,8 +1613,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "nvidia-cuda-runtime-cu12"
@@ -1610,8 +1629,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "nvidia-cudnn-cu12"
@@ -1628,8 +1647,8 @@ nvidia-cublas-cu12 = "*"
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "nvidia-cufft-cu12"
@@ -1644,8 +1663,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "nvidia-curand-cu12"
@@ -1660,8 +1679,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "nvidia-cusolver-cu12"
@@ -1681,8 +1700,8 @@ nvidia-nvjitlink-cu12 = "*"
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "nvidia-cusparse-cu12"
@@ -1700,8 +1719,8 @@ nvidia-nvjitlink-cu12 = "*"
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "nvidia-nccl-cu12"
@@ -1715,8 +1734,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "nvidia-nvjitlink-cu12"
@@ -1731,8 +1750,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "nvidia-nvtx-cu12"
@@ -1747,8 +1766,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "onnx"
@@ -1793,8 +1812,8 @@ reference = ["Pillow", "google-re2"]
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "packaging"
@@ -1809,8 +1828,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "pandas"
@@ -1881,8 +1900,8 @@ xml = ["lxml (>=4.6.3)"]
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "pgvector"
@@ -1899,8 +1918,8 @@ numpy = "*"
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "pillow"
@@ -1989,8 +2008,8 @@ xmp = ["defusedxml"]
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "protobuf"
@@ -2014,8 +2033,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "psutil"
@@ -2047,8 +2066,8 @@ test = ["enum34", "ipaddress", "mock", "pywin32", "wmi"]
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "psycopg2-binary"
@@ -2133,8 +2152,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "pyarrow"
@@ -2186,8 +2205,8 @@ numpy = ">=1.16.6,<2"
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "pycparser"
@@ -2202,8 +2221,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "pycryptodome"
@@ -2248,8 +2267,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "pydantic"
@@ -2272,8 +2291,8 @@ email = ["email-validator (>=2.0.0)"]
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "pydantic-core"
@@ -2368,8 +2387,8 @@ typing-extensions = ">=4.6.0,<4.7.0 || >4.7.0"
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "python-dateutil"
@@ -2387,8 +2406,8 @@ six = ">=1.5"
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "python-rapidjson"
@@ -2462,8 +2481,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "pytz"
@@ -2478,8 +2497,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "pyyaml"
@@ -2542,8 +2561,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "regex"
@@ -2649,8 +2668,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "requests"
@@ -2675,8 +2694,8 @@ use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "safetensors"
@@ -2812,8 +2831,8 @@ torch = ["safetensors[numpy]", "torch (>=1.10)"]
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "scikit-learn"
@@ -2864,8 +2883,8 @@ tests = ["black (>=23.3.0)", "matplotlib (>=3.1.3)", "mypy (>=1.3)", "numpydoc (
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "scipy"
@@ -2907,8 +2926,8 @@ test = ["asv", "gmpy2", "mpmath", "pytest", "pytest-cov", "pytest-xdist", "sciki
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "sentence-transformers"
@@ -2935,8 +2954,8 @@ transformers = ">=4.32.0,<5.0.0"
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "sentencepiece"
@@ -2994,8 +3013,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "setuptools"
@@ -3015,8 +3034,8 @@ testing-integration = ["build[virtualenv] (>=1.0.3)", "filelock (>=3.4.0)", "jar
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "six"
@@ -3031,8 +3050,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "sqlalchemy"
@@ -3123,8 +3142,8 @@ sqlcipher = ["sqlcipher3-binary"]
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "sqlmodel"
@@ -3143,8 +3162,8 @@ SQLAlchemy = ">=2.0.0,<2.1.0"
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "sympy"
@@ -3162,8 +3181,8 @@ mpmath = ">=0.19"
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "threadpoolctl"
@@ -3178,8 +3197,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "tokenizers"
@@ -3310,8 +3329,8 @@ testing = ["black (==22.3)", "datasets", "numpy", "pytest", "requests"]
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "torch"
@@ -3373,8 +3392,8 @@ optree = ["optree (>=0.9.1)"]
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "tqdm"
@@ -3398,8 +3417,8 @@ telegram = ["requests"]
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "transformers"
@@ -3471,8 +3490,8 @@ vision = ["Pillow (>=10.0.1,<=15.0)"]
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "triton"
@@ -3499,8 +3518,8 @@ tutorials = ["matplotlib", "pandas", "tabulate", "torch"]
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "tritonclient"
@@ -3532,8 +3551,8 @@ http = ["aiohttp (>=3.8.1,<4.0.0)", "geventhttpclient (>=1.4.4,<=2.0.2)", "numpy
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "typing-extensions"
@@ -3548,8 +3567,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "tzdata"
@@ -3564,8 +3583,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "urllib3"
@@ -3586,8 +3605,8 @@ zstd = ["zstandard (>=0.18.0)"]
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "xxhash"
@@ -3708,8 +3727,8 @@ files = [
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "yarl"
@@ -3816,8 +3835,8 @@ multidict = ">=4.0"
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "zope-event"
@@ -3839,8 +3858,8 @@ test = ["zope.testrunner"]
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [[package]]
 name = "zope-interface"
@@ -3897,10 +3916,10 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 
 [package.source]
 type = "legacy"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple"
-reference = "pingan"
+url = "http://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
 
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "cf382a9c03b2fcce4c620f67394830cfce1a52dab0e081ef02c87c674e6109a8"
+content-hash = "8e562985dc53e764573157ca379aff90dce4398b6ae97a0007f2349aa3e93f90"

@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "triton-bert"
-version = "0.2.0"
-description = "easy to use bert with nvidia triton server"
+version = "0.3.0"
+description = "easy to use bert with nvidia triton inference server"
 authors = ["yanyongwen712 <yanyongwen712@pingan.com.cn>"]
 license = "MIT"
 readme = "README.md"
@@ -12,23 +12,23 @@ tritonclient = {extras = ["grpc", "http"], version = "^2.41.0"}
 transformers = "^4.36.2"
 more-itertools = "^10.1.0"
 protobuf = "^4.23"
-
-[tool.poetry.group.dev.dependencies]
 pgvector = "^0.2.4"
 sqlmodel = "^0.0.14"
-sentence-transformers = "^2.2.2"
 onnx = "^1.15.0"
 psycopg2-binary = "^2.9.9"
+jsonlines = "^4.0.0"
+
+[tool.poetry.group.dev.dependencies]
+sentence-transformers = "^2.2.2"
+flagembedding = "^1.2.3"
 grequests = "^0.7.0"
 pycryptodome = "^3.20.0"
-flagembedding = "^1.2.3"
-
 
 
 [[tool.poetry.source]]
-name = "pingan"
-url = "http://mirrors.paic.com.cn:80/pypi/web/simple/"
-priority = "default"
+name = "aliyun"
+url = "http://mirrors.aliyun.com/pypi/simple/"
+priority = "primary"
 
 [build-system]
 requires = ["poetry-core"]

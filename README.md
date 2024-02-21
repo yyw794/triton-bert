@@ -1,5 +1,14 @@
-It is easy to use bert in triton now.
+It is easy to use bert in triton inference server now.
+
+1. triton_bert.py 
 Algorithm Engineer only need to focus to write proprocess function to make his model work.
+2. model_4_triton.py
+Tool for transfer huggingface pytorch.bin model into torchscript or onnx to be used in triton inference server.
+3. pgvector_triton.py
+Tool for easy usage if you use postgresql/pgvector as the vector db in semantic retrieval
+
+# Github
+https://github.com/yyw794/triton-bert
 
 # USAGES:
 ## Example 0:
@@ -17,7 +26,7 @@ if __name__ == "__main__":
     # batch inferences
     vectors = model(["基金的收益率是多少？", "我有个朋友的股票天天涨停"])
     # or
-    # vectors = model.encodes(["基金的收益率是多少？", "我有个朋友的股票天天涨停"])
+    vectors = model.encode(["基金的收益率是多少？", "我有个朋友的股票天天涨停"])
     assert len(vectors) == 2
 
     # single inference
@@ -122,12 +131,26 @@ if __name__ == "__main__":
 
 ```
 
-## prepare PG with pgvector extension
-...
+# Semantic Retrieval with Postgresql/pgvector
+Example 1
+```python
 
-## run example
-```bash
-# change triton server ip , triton model name and local transformer model folder
-python retrieval_pgvector.py
+    instance = PgvectorTriton(db_user="budevadmin", db_password='eimdmPOSTGRESQL@2023',
+                              db_instance="D0PEIMDMINFO-postgresql.dbdev.paic.com.cn", db_port="3671",
+                   db_schema="pivotoperation", create_table=True,
+                   triton_host="30.171.160.44", model="bge-m3",
+                   vocab="/Users/yanyongwen712/Codes/pingan_health_rag/models/bge-m3",
+                              table_model=Sentence
+                   )
+
+    # insert
+    qas = instance.load_texts("dataset/medical_qa.jsonl")
+    answers = [qa['answers'][0] for qa in qas]
+    instance.insert_vectors(answers)
+    
+    # retrieval
+    recalls: List[Sentence] = instance.retrieval_vectors("我喉咙有些干")
+
+    print(recalls[0].sentence)
 ```
 

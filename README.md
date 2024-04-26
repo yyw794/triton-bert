@@ -20,8 +20,8 @@ so no need to override the proprocess function.
 from triton_bert.triton_bert import TritonBert
 
 if __name__ == "__main__":
-    model = TritonBert(triton_host="30.171.160.44", model="sbert_onnx", 
-                       vocab="/Users/yanyongwen712/.cache/torch/sentence_transformers/sentence-transformers_all-MiniLM-L6-v2")
+    model = TritonBert(triton_host="127.0.0.1", model="sbert_onnx", 
+                       vocab="/Users/xxx/.cache/torch/sentence_transformers/sentence-transformers_all-MiniLM-L6-v2")
 
     # batch inferences
     vectors = model(["基金的收益率是多少？", "我有个朋友的股票天天涨停"])
@@ -113,7 +113,7 @@ class ChitchatIntentDetection(TritonBert):
 ## run triton server
 ```bash
 # for example
-docker run -d  --name triton-server   --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864  --rm -p 8000:8000 -p 8001:8001 -p 8002:8002 -v /home/yanyongwen712/triton_models:/models  nvcr.io/nvidia/tritonserver::22.08-py3 tritonserver --model-repository=/models  --model-control-mode=poll  --exit-on-error=false --log-verbose 1
+docker run -d  --name triton-server   --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864  --rm -p 8000:8000 -p 8001:8001 -p 8002:8002 -v /home/xxxx/triton_models:/models  nvcr.io/nvidia/tritonserver::22.08-py3 tritonserver --model-repository=/models  --model-control-mode=poll  --exit-on-error=false --log-verbose 1
 # configure triton model folder
 ```
 ## prepare model for triton server
@@ -124,7 +124,7 @@ Example:
 from triton_bert.model_4_triton import Model4TritonServer
 
 if __name__ == "__main__":
-    pretrained_model = "/Users/yanyongwen712/.cache/torch/sentence_transformers/simcse-chinese-roberta-wwm-ext"
+    pretrained_model = "/Users/xxxxx/.cache/torch/sentence_transformers/simcse-chinese-roberta-wwm-ext"
     model = Model4TritonServer(pretrained_model=pretrained_model)
     model.save_torchscript("model/simcse_model.pt")
     model.save_onnx("model/simcse_model.onnx")
@@ -135,11 +135,11 @@ if __name__ == "__main__":
 Example 1
 ```python
 
-    instance = PgvectorTriton(db_user="budevadmin", db_password='eimdmPOSTGRESQL@2023',
-                              db_instance="D0PEIMDMINFO-postgresql.dbdev.paic.com.cn", db_port="3671",
-                   db_schema="pivotoperation", create_table=True,
-                   triton_host="30.171.160.44", model="bge-m3",
-                   vocab="/Users/yanyongwen712/Codes/pingan_health_rag/models/bge-m3",
+    instance = PgvectorTriton(db_user="xxx", db_password='xxxx',
+                              db_instance="xxxx", db_port="3671",
+                   db_schema="xxx", create_table=True,
+                   triton_host="xxx", model="bge-m3",
+                   vocab="/Users/xxx/Codes/pingan_health_rag/models/bge-m3",
                               table_model=Sentence
                    )
 

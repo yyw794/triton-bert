@@ -6,12 +6,12 @@ from transformers import AutoTokenizer, AutoModel
 
 
 class Model4TritonServer(nn.Module):
-    def __init__(self, pretrained_model:Optional[str]=None, gpu_mode: bool=False, model=None, tokenizer=None, model_eval=True):
+    def __init__(self, pretrained_model:Optional[str]=None, gpu_mode: bool=False, model=None, tokenizer=None, model_eval=True, torch_dtype='auto'):
         if pretrained_model is None and (model is None or tokenizer is None):
             raise Exception("pretrained_model and (model, tokenizer) must not be both None")
         super(Model4TritonServer, self).__init__()
         if model is None and pretrained_model is not None:
-            self.model = AutoModel.from_pretrained(pretrained_model, torchscript=True)
+            self.model = AutoModel.from_pretrained(pretrained_model, torchscript=True, torch_dtype=torch_dtype)
         elif model is not None:
             self.model = model
 

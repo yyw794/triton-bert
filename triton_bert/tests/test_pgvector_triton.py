@@ -33,11 +33,11 @@ if __name__ == "__main__":
     '''
     TEST 1
     '''
-    instance = PgvectorTriton(db_user="budevadmin", db_password='eimdmPOSTGRESQL@2023',
-                              db_instance="D0PEIMDMINFO-postgresql.dbdev.paic.com.cn", db_port="3671",
-                   db_schema="pivotoperation", create_table=True,
-                   triton_host="30.171.160.44", model="bge-m3",
-                   vocab="/Users/yanyongwen712/Codes/pingan_health_rag/models/bge-m3",
+    instance = PgvectorTriton(db_user="xx", db_password='xxx',
+                              db_instance="xxx", db_port="3671",
+                   db_schema="xx", create_table=True,
+                   triton_host="xx", model="bge-m3",
+                   vocab="/Users/xx/Codes/pingan_health_rag/models/bge-m3",
                               table_model=Sentence
                    )
 
@@ -54,11 +54,11 @@ if __name__ == "__main__":
     '''
     TEST 2
     '''
-    instance = PgvectorTritonCustomized(db_user="budevadmin", db_password='eimdmPOSTGRESQL@2023',
-                              db_instance="D0PEIMDMINFO-postgresql.dbdev.paic.com.cn", db_port="3671",
-                   db_schema="pivotoperation", create_table=True,
-                   triton_host="30.171.160.44", model="bge-m3",
-                   vocab="/Users/yanyongwen712/Codes/pingan_health_rag/models/bge-m3",
+    instance = PgvectorTritonCustomized(db_user="xx", db_password='xxx',
+                              db_instance="xx", db_port="3671",
+                   db_schema="xx", create_table=True,
+                   triton_host="xx", model="bge-m3",
+                   vocab="/Users/xx/Codes/pingan_health_rag/models/bge-m3",
                               table_model=QA)
 
     qas = instance.load_texts("dataset/medical_qa.jsonl")

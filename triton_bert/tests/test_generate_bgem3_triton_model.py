@@ -50,4 +50,4 @@ if __name__ == "__main__":
 
     model = Model4TritonServer(model=n.model, tokenizer=n.tokenizer)
     model.save_torchscript("model/bgem3_model.pt")
-    model.save_onnx("model/bgem3_model.onnx")
+    #model.save_onnx("model/bgem3_model.onnx")

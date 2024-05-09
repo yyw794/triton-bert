@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "triton-bert"
-version = "0.3.0"
+version = "0.3.2"
 description = "easy to use bert with nvidia triton inference server"
-authors = ["yanyongwen712 <yanyongwen712@pingan.com.cn>"]
+authors = ["yyw794 <yyw794@126.com>"]
 license = "MIT"
 readme = "README.md"
 
@@ -17,12 +17,6 @@ sqlmodel = "^0.0.14"
 onnx = "^1.15.0"
 psycopg2-binary = "^2.9.9"
 jsonlines = "^4.0.0"
-
-[tool.poetry.group.dev.dependencies]
-sentence-transformers = "^2.2.2"
-flagembedding = "^1.2.3"
-grequests = "^0.7.0"
-pycryptodome = "^3.20.0"
 
 
 [[tool.poetry.source]]

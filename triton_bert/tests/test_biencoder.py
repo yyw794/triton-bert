@@ -19,8 +19,8 @@ class Biencoder(TritonBert):
         return triton_output[0].tolist()
 
 if __name__ == "__main__":
-    model = Biencoder(triton_host="30.171.160.44", model="sbert_onnx",
-                       vocab="/Users/yanyongwen712/.cache/torch/sentence_transformers/sentence-transformers_all-MiniLM-L6-v2")
+    model = Biencoder(triton_host="xxx", model="sbert_onnx",
+                       vocab="/Users/xxxx/.cache/torch/sentence_transformers/sentence-transformers_all-MiniLM-L6-v2")
 
     # batch inferences
     vectors = model(["基金的收益率是多少？", "我有个朋友的股票天天涨停"])

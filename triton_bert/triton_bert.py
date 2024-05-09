@@ -11,6 +11,9 @@ class TritonBert:
     def __init__(self, model: str, vocab: str, triton_host: str="localhost", triton_grpc_port: int=8001, 
         model_max_len: int=512, padding: Optional[PaddingStrategy]=None, 
         truncation: TruncationStrategy=TruncationStrategy.LONGEST_FIRST):
+        
+        self.tokenizer = AutoTokenizer.from_pretrained(vocab)
+        
         self.triton_url = f"{triton_host}:{triton_grpc_port}"
         self.connect_triton()
         
@@ -20,7 +23,7 @@ class TritonBert:
         self.truncation = truncation
         self.parse_triton_model_config()
 
-        self.tokenizer = AutoTokenizer.from_pretrained(vocab)
+        
 
     def connect_triton(self):
         self.triton_client = grpcclient.InferenceServerClient(url=self.triton_url)

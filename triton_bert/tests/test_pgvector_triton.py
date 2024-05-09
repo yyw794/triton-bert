@@ -4,7 +4,7 @@ from pgvector.sqlalchemy import Vector
 from sqlalchemy import Column
 from sqlmodel import SQLModel, Field, select
 
-from triton_bert.pgvector_triton import PgvectorTriton
+from triton_bert.vector_db.pgvector_triton import PgvectorTriton
 
 class Sentence(SQLModel, table=True):
     # 默认是serial

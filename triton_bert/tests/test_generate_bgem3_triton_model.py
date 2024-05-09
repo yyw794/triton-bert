@@ -1,7 +1,7 @@
 import torch
 from torch import Tensor
 
-from triton_bert.model_4_triton import Model4TritonServer
+from triton_bert.model.model_4_triton import Model4TritonServer
 from FlagEmbedding.BGE_M3 import BGEM3ForInference
 
 class BGEM3ForTritonInference(BGEM3ForInference):
@@ -49,5 +49,5 @@ if __name__ == "__main__":
     n = BGEM3ForTritonInference(pretrained_model)
 
     model = Model4TritonServer(model=n.model, tokenizer=n.tokenizer)
-    model.save_torchscript("model/bgem3_model.pt")
-    #model.save_onnx("model/bgem3_model.onnx")
+    #model.save_torchscript("model/bgem3_model.pt")
+    model.save_onnx("model/bgem3_model.onnx")
